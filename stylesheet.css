@@ -1,0 +1,190 @@
+
+#container
+{
+  position: relative;
+  top:0px;
+  margin: 0 auto;
+  height: 600px;
+  width: 800px;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+#info
+{
+  position: relative;
+  height: 50px;
+  width: auto;
+  top: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32pt;
+}
+
+#readme
+{
+  position: relative;
+  top:520px;
+  left: 60px;
+  margin: 0 auto;
+}
+
+#begin
+{
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  color: red;
+  font-family: serif;
+  font-size: 70pt;
+  top:350px;
+  left: 60px;
+  text-align: center;
+}
+
+.not_begin
+{
+  background-color: rgba(255,255,0,0.3);
+}
+.beginning
+{
+  background-color: rgba(255, 255, 0, 0.9);
+}
+.begun
+{
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+
+#arrive
+{
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  color: red;
+  font-family: serif;
+  font-size: 70pt;
+  top:350px;
+  left: 690px;
+  text-align: center;
+}
+
+.not_arrive
+{
+  background-color: rgba(255,255,0,0.3);
+}
+.arriving
+{
+  background-color: rgba(255,255,0,0.9);
+}
+
+
+.com_wall
+{
+  position: absolute;
+  background-color: red;
+}
+
+.normal_wall
+{
+  position: absolute;
+  background-color: gray;
+}
+
+#w1
+{
+  width: 100px;
+  height: 176px;
+  width: 200px;
+  top:174px;
+  left:60px;
+}
+#w2
+{
+  height: 100px;
+  width: 150px;
+  height: 200px;
+  top:250px;
+  left:310px;
+}
+
+#w3
+{
+  width: 100px;
+  height: 175px;
+  width: 180px;
+  top:175px;
+  left:560px;
+}
+
+#w4
+{
+  height: 100px;
+  width: 680px;
+  top:75px;
+  left:60px;
+}
+
+#w5
+{
+  height: 100px;
+  width: 680px;
+  top:450px;
+  left:60px;
+}
+
+.never_visit_way
+{
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.visiting_way
+{
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.9);
+}
+
+.visited_way
+{
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#way1
+{
+  height: 100px;
+  width: 200px;
+  left:110px;
+  top: 350px;
+}
+
+#way2
+{
+  height: 100px;
+  width: 50px;
+  left:260px;
+  top: 250px;
+}
+#way3
+{
+  height: 75px;
+  width: 300px;
+  left:260px;
+  top: 175px;
+}
+#way4
+{
+  width: 100px;
+  height: 200px;
+  left:460px;
+  top: 250px;
+}
+
+#way5
+{
+  height: 100px;
+  width: 130px;
+  left:560px;
+  top: 350px;
+}
