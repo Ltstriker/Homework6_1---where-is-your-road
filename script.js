@@ -7,26 +7,13 @@ var finish = false;
 
 window.onload = function()
 {
-  document.getElementById('w1').onmouseover = function(){fail(1);};
-  document.getElementById('w2').onmouseover = function(){fail(2);};
-  document.getElementById('w3').onmouseover = function(){fail(3);};
-  document.getElementById('w4').onmouseover = function(){fail(4);};
-  document.getElementById('w5').onmouseover = function(){fail(5);};
+  for(var c1=1;c1<=5;c1++)
+  {
+    $('#w'+c1.toString()).bind('mouseenter',c1,fail);
+    $('#way'+c1.toString()).bind('mouseleave',c1,passed).bind('mouseenter',c1,passing);
+  }
 
-  document.getElementById('way1').onmouseover = function(){passing(1);};
-  document.getElementById('way2').onmouseover = function(){passing(2);};
-  document.getElementById('way3').onmouseover = function(){passing(3);};
-  document.getElementById('way4').onmouseover = function(){passing(4);};
-  document.getElementById('way5').onmouseover = function(){passing(5);};
-
-  document.getElementById('way1').onmouseout = function(){passed(1);};
-  document.getElementById('way2').onmouseout = function(){passed(2);};
-  document.getElementById('way3').onmouseout = function(){passed(3);};
-  document.getElementById('way4').onmouseout = function(){passed(4);};
-  document.getElementById('way5').onmouseout = function(){passed(5);};
-
-  document.getElementById('begin').onmouseout = function(){begun();};
-  document.getElementById('begin').onmouseover = function(){beginning();};
+  $('#begin').mouseleave(begun).mouseenter(beginning);
 
   document.getElementById('arrive').onmouseout = function(){arrived();};
   document.getElementById('arrive').onmouseover = function(){arriving();};
@@ -35,8 +22,9 @@ window.onload = function()
 }
 
 
-function fail(c_wall)
+function fail(event)
 {
+  var c_wall =event.data;
   if(begin == false)
     return;
   if(_fail==true||finish ==true)
@@ -104,8 +92,9 @@ function arrived()
     finish = true;
 }
 
-function passing(c_way)
+function passing(event)
 {
+  var c_way = event.data;
   if(begin == false)
     return;
   if(_fail==true||finish ==true)
@@ -118,8 +107,9 @@ function passing(c_way)
   }
 }
 
-function passed(c_way)
+function passed(event)
 {
+  var c_way = event.data;
   if(begin == false)
     return;
   if(_fail==true||finish ==true)
@@ -146,3 +136,6 @@ function init()
 
   document.getElementById("info").innerHTML = "开心闯迷宫";
 }
+
+
+//
